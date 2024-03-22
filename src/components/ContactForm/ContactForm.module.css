@@ -1,0 +1,22 @@
+.contactForm {
+  background-color: #002453;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 15px 0;
+}
+
+.contactInput {
+  border-radius: 5px;
+  height: 25px;
+  border: none;
+}
+
+.contactAddBtn {
+  box-shadow: 0px 2px 10px 2px #80a2ff;
+  border-radius: 5px;
+  height: 25px;
+  border: none;
+}
