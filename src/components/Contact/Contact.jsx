@@ -1,10 +1,11 @@
 import css from "./Contact.module.css";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsSlice";
+import { deleteContact } from "../../redux/contactsOps";
 
 export const Contact = ({ item: { name, number, id } }) => {
   const dispatch = useDispatch();
+
   return (
     <div className={css.contactsList}>
       <div className={css.contact}>
