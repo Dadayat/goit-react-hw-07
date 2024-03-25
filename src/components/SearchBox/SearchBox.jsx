@@ -1,13 +1,13 @@
 import { useId } from "react";
 import css from "./SearchBox.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getFilter } from "../../redux/selector";
+import { selectContactFilter } from "../../redux/filtersSlice";
 import { filterContact } from "../../redux/filtersSlice";
 
 export const SearchBox = () => {
   const filterId = useId();
   const dispatch = useDispatch();
-  const filterName = useSelector(getFilter);
+  const filterName = useSelector(selectContactFilter);
 
   return (
     <div className={css.form}>
